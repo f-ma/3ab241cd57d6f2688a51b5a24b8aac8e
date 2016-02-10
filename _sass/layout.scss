@@ -1,0 +1,31 @@
+.container {
+  &.container-flex {
+    display: -webkit-flex;
+    display: flex;
+  }
+  &.container-main {
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 1024px;
+    width: 100%;
+  }
+}
+
+#top {
+  -webkit-flex-grow: 0;
+  flex-grow: 0;
+}
+
+#center {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  width: 100%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
