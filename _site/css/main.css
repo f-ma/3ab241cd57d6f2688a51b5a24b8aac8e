@@ -285,7 +285,7 @@ header#top {
             border-right: none;
             border-left: none;
             cursor: pointer;
-            -webkit-transition: background-color .2s ease-in-out;
+            -webkit-transition: none;
             -moz-transition: background-color .2s ease-in-out;
             transition: background-color .2s ease-in-out; }
             #main .actions-and-shows .shows > .content .customer .label:hover {
@@ -304,7 +304,7 @@ header#top {
               #main .actions-and-shows .shows > .content .customer .label .cancel button, #main .actions-and-shows .shows > .content .customer .label .done button {
                 height: 100%;
                 width: 70px;
-                -webkit-transition: background-color .1s ease-in-out;
+                -webkit-transition: none;
                 transition: background-color .1s ease-in-out; }
             #main .actions-and-shows .shows > .content .customer .label .cancel {
               left: 0; }
@@ -343,7 +343,7 @@ header#top {
                 -webkit-align-items: center;
                 align-items: center;
                 margin: 0 0 0 0;
-                -webkit-transition: margin .4s ease-in-out .1s;
+                -webkit-transition: none;
                 transition: margin .4s ease-in-out .1s; }
                 #main .actions-and-shows .shows > .content .customer .label .show .literal:before {
                   content: '';
@@ -355,7 +355,7 @@ header#top {
                   -webkit-background-size: 15px 21px;
                   background-size: 15px 21px;
                   opacity: 1;
-                  -webkit-transition: opacity .4s ease-in-out;
+                  -webkit-transition: none;
                   transition: opacity .4s ease-in-out; }
             #main .actions-and-shows .shows > .content .customer .label .action:after {
               content: '+';
@@ -368,7 +368,7 @@ header#top {
             background-color: white;
             border-bottom: solid 1px #e6e6e6;
             overflow: hidden;
-            -webkit-transition: height .2s ease-in-out, opacity .2s ease-in-out;
+            -webkit-transition: none;
             transition: height .2s ease-in-out, opacity .2s ease-in-out; }
             #main .actions-and-shows .shows > .content .customer .extend .wrapper {
               display: -webkit-flex;
@@ -378,7 +378,7 @@ header#top {
               height: 330px;
               margin-top: -15px;
               opacity: 0;
-              -webkit-transition: margin .1s ease-in-out, opacity .1s ease-in-out;
+              -webkit-transition: none;
               transition: margin .1s ease-in-out, opacity .1s ease-in-out; }
             #main .actions-and-shows .shows > .content .customer .extend .search {
               position: relative;
@@ -427,7 +427,7 @@ header#top {
           border: solid 1px #e6e6e6;
           border-right: none;
           border-left: none;
-          -webkit-transition: height .2s ease-in-out;
+          -webkit-transition: none;
           transition: height .2s ease-in-out;
           cursor: pointer; }
     #main .actions-and-shows .actions {

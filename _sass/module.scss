@@ -246,7 +246,7 @@ header#top {
             border-right: none;
             border-left: none;
             cursor: pointer;
-            -webkit-transition: background-color .2s ease-in-out;
+            -webkit-transition: none;
             -moz-transition: background-color .2s ease-in-out;
             transition: background-color .2s ease-in-out;
             &:hover {
@@ -267,7 +267,7 @@ header#top {
               button {
                 height: 100%;
                 width: 70px;
-                -webkit-transition: background-color .1s ease-in-out;
+                -webkit-transition: none;
                 transition: background-color .1s ease-in-out;
               }
             }
@@ -318,7 +318,7 @@ header#top {
                 -webkit-align-items: center;
                 align-items: center;
                 margin: 0 0 0 0;
-                -webkit-transition: margin .4s ease-in-out .1s;
+                -webkit-transition: none;
                 transition: margin .4s ease-in-out .1s;
                 &:before {
                   content: '';
@@ -330,7 +330,7 @@ header#top {
                   -webkit-background-size: 15px 21px;
                   background-size: 15px 21px;
                   opacity: 1;
-                  -webkit-transition: opacity .4s ease-in-out;
+                  -webkit-transition: none;
                   transition: opacity .4s ease-in-out;
                 }
               }
@@ -350,7 +350,7 @@ header#top {
             background-color: white;
             border-bottom: solid 1px #e6e6e6;
             overflow: hidden;
-            -webkit-transition: height .2s ease-in-out, opacity .2s ease-in-out;
+            -webkit-transition: none;
             transition: height .2s ease-in-out, opacity .2s ease-in-out;
             .wrapper {
               display: -webkit-flex;
@@ -360,7 +360,7 @@ header#top {
               height: 330px;
               margin-top: -15px;
               opacity: 0;
-              -webkit-transition: margin .1s ease-in-out, opacity .1s ease-in-out;
+              -webkit-transition: none;
               transition: margin .1s ease-in-out, opacity .1s ease-in-out;
             }
             .search {
@@ -418,7 +418,7 @@ header#top {
           border: solid 1px #e6e6e6;
           border-right: none;
           border-left: none;
-          -webkit-transition: height .2s ease-in-out;
+          -webkit-transition: none;
           transition: height .2s ease-in-out;
           cursor: pointer;
         }
