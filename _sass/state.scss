@@ -2,6 +2,25 @@
   opacity: .6;
 }
 
+.items {
+  > li {
+    &.active {
+      margin: 15px 0;
+      border-bottom: solid 1px #e6e6e6;
+      .extend {
+        height: 120px;
+        opacity: 1;
+      }
+      &:first-child {
+        margin: -1px 0 15px 0;
+      }
+      &:last-child {
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+}
+
 #main {
   .actions-and-shows {
     .shows {
@@ -43,7 +62,7 @@
               }
             }
             .extend {
-              height: 330px;
+              height: 320px;
               opacity: 1;
               .wrapper {
                 margin-top: 0;

@@ -39,7 +39,7 @@ header#top {
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
   overflow: auto;
-  li{
+  li {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row nowrap;
@@ -48,14 +48,8 @@ header#top {
     align-items: center;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-
     -webkit-flex-shrink: 0;
     flex-shrink: 0;
-    height: 42px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    margin: 5px 10px;
     padding: 0 15px;
     cursor: pointer;
     .show {
@@ -75,13 +69,10 @@ header#top {
 
 .customer-list {
   li {
-    background-color: darkgray;
-    color: white;
-    &:hover {
-      background-color: grey;
-    }
+    border-bottom: solid 1px #e6e6e6;
+    height: 50px;
     &:active {
-      background-color: darkgray;
+      background-color: #fcfcfc;
     }
   }
 }
@@ -90,6 +81,8 @@ header#top {
   li {
     border: dashed 2px #e6e6e6;
     color: #999999;
+    margin: 0 15px;
+    height: 42px;
     &:hover {
       background-color: #fcfcfc;
     }
@@ -116,53 +109,71 @@ header#top {
   -webkit-transition: margin .3s ease-in-out;
   transition: margin .3s ease-in-out;
   > li {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    align-items: center;
-    background-color: white;
-    height: 75px;
-    padding: 0 15px;
-    border-top: solid 1px #e6e6e6;
-    cursor: pointer;
-    &:first-child {
-      border-top: none;
-    }
-    &:last-child {
-      border-bottom: solid 1px #e6e6e6;
-    }
-    .show {
+    transition: margin .2s ease-in-out .1s;
+    margin-top: -1px;
+    .origin {
       display: -webkit-flex;
       display: flex;
       -webkit-flex-flow: row nowrap;
       flex-flow: row nowrap;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
       -webkit-align-items: center;
       align-items: center;
-      .decorate {
-        margin-right: 15px;
-        .qty {
-          display: block;
-          width: 38px;
-          height: 38px;
-          line-height: 37px;
-          text-align: center;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          border-radius: 50%;
-          border: dashed 1px #999999;
+      background-color: white;
+      height: 75px;
+      padding: 0 15px;
+      border-top: solid 1px #e6e6e6;
+      border-bottom: solid 1px #e6e6e6;
+      cursor: pointer;
+      .show {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-align-items: center;
+        align-items: center;
+        .decorate {
+          margin-right: 15px;
+          .qty {
+            display: block;
+            width: 38px;
+            height: 38px;
+            line-height: 37px;
+            text-align: center;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            border: dashed 1px #999999;
+            font-weight: 600;
+          }
+        }
+        .literal {
           font-weight: 600;
         }
       }
-      .literal {
-        font-weight: 600;
+      .price {
+        color: darkred;
       }
     }
-    .price {
-      color: darkred;
+    .extend {
+      height: 0;
+      opacity: 0;
+      background-color: white;
+      transition: height .2s ease-in-out, opacity .2s ease-in-out;
+    }
+    &:first-child {
+      .origin {
+        border-top: none;
+      }
+    }
+    &:last-child {
+      .origin {
+        border-bottom: solid 1px #e6e6e6;
+      }
+      .extend {
+        border-top: none !important;
+      }
     }
   }
 }
@@ -357,7 +368,7 @@ header#top {
               display: flex;
               -webkit-flex-flow: column nowrap;
               flex-flow: column nowrap;
-              height: 330px;
+              height: 320px;
               margin-top: -15px;
               opacity: 0;
               -webkit-transition: none;
@@ -401,7 +412,7 @@ header#top {
               justify-content: space-between;
               -webkit-flex-grow: 1;
               flex-grow: 1;
-              padding: 10px 0;
+              padding: 0 0 15px 0;
             }
           }
         }
