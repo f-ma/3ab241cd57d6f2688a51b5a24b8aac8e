@@ -161,6 +161,49 @@ header#top {
       opacity: 0;
       background-color: white;
       transition: height .2s ease-in-out, opacity .2s ease-in-out;
+      .wrapper {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        .group {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+          height: 35px;
+          margin: -1px 0 0 0;
+          &.group-half {
+            width: 50%;
+            label {
+              border: solid 1px #e6e6e6;
+              border-left: none;
+              height: 100%;
+              padding: 0 15px;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-align-items: center;
+              align-items: center;
+              background-color: darkorange;
+              color: white;
+            }
+            input {
+              -webkit-flex-shrink: 1;
+              flex-shrink: 1;
+              -webkit-flex-grow: 1;
+              flex-grow: 1;
+              width: 50%;
+              border: solid 1px #e6e6e6;
+              border-left: none;
+              padding: 0 15px;
+              font-weight: 600;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
     }
     &:first-child {
       .origin {
