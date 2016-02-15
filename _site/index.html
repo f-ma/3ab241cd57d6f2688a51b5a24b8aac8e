@@ -14,7 +14,43 @@
     <div id="center">
         <section id="sidebar"></section>
         <div id="main">
-            <section class="general"></section>
+            <section class="general">
+                <header>
+                    <div class="wrapper wrapper-search">
+                        <input class="input-search" type="text" placeholder="Search Product" />
+                        <button class="button-search"></button>
+                    </div>
+                    <div class="wrapper wrapper-"></div>
+                </header>
+                <div class="product-container">
+                    <div class="product-list">
+                        <div class="row">
+                            <div class="product"></div>
+                            <div class="product"></div>
+                            <div class="product"></div>
+                            <div class="product"></div>
+                        </div>
+                        <div class="row">
+                            <div class="product"></div>
+                            <div class="product"></div>
+                            <div class="product"></div>
+                            <div class="product"></div>
+                        </div>
+                        <div class="row">
+                            <div class="product"></div>
+                            <div class="product"></div>
+                            <div class="product"></div>
+                            <div class="product"></div>
+                        </div>
+                        <div class="row">
+                            <div class="product"></div>
+                            <div class="product"></div>
+                            <div class="product"></div>
+                            <div class="product"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="actions-and-shows no-select">
                 <div id="show-to-sale" class="shows summary-active">
                     <header>
@@ -132,6 +168,158 @@
                                                 <div class="group">
                                                     <label class="label label-price">Price</label>
                                                     <input class="input-number" type="text" value="59" />
+                                                </div>
+                                                <div class="group">
+                                                    <label>Discount</label>
+                                                    <input class="input-number" type="text" value="0" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="option-container">
+                                                <label class="label"></label>
+                                                <label class="label label-split">Split</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-on-cart no-select">
+                                <div class="origin" onclick="itemOnCartClickHandle(event);">
+                                    <div class="show">
+                                        <div class="decorate">
+                                            <span class="qty">1</span>
+                                        </div>
+                                        <div class="literal">
+                                            <header>Tank</header>
+                                        </div>
+                                    </div>
+                                    <div class="price">99.00</div>
+                                </div>
+                                <div class="extend">
+                                    <div class="wrapper">
+                                        <div class="row">
+                                            <div class="qty">
+                                                <input class="input-number" type="text" value="1" />
+                                            </div>
+                                            <div class="deep">
+                                                <div class="group">
+                                                    <label class="label label-price">Price</label>
+                                                    <input class="input-number" type="text" value="99" />
+                                                </div>
+                                                <div class="group">
+                                                    <label>Discount</label>
+                                                    <input class="input-number" type="text" value="0" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="option-container">
+                                                <label class="label"></label>
+                                                <label class="label label-split">Split</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-on-cart no-select">
+                                <div class="origin" onclick="itemOnCartClickHandle(event);">
+                                    <div class="show">
+                                        <div class="decorate">
+                                            <span class="qty">1</span>
+                                        </div>
+                                        <div class="literal">
+                                            <header>Jungle Suit</header>
+                                        </div>
+                                    </div>
+                                    <div class="price">599.00</div>
+                                </div>
+                                <div class="extend">
+                                    <div class="wrapper">
+                                        <div class="row">
+                                            <div class="qty">
+                                                <input class="input-number" type="text" value="1" />
+                                            </div>
+                                            <div class="deep">
+                                                <div class="group">
+                                                    <label class="label label-price">Price</label>
+                                                    <input class="input-number" type="text" value="599" />
+                                                </div>
+                                                <div class="group">
+                                                    <label>Discount</label>
+                                                    <input class="input-number" type="text" value="0" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="option-container">
+                                                <label class="label"></label>
+                                                <label class="label label-split">Split</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-on-cart no-select">
+                                <div class="origin" onclick="itemOnCartClickHandle(event);">
+                                    <div class="show">
+                                        <div class="decorate">
+                                            <span class="qty">1</span>
+                                        </div>
+                                        <div class="literal">
+                                            <header>Gangbang</header>
+                                        </div>
+                                    </div>
+                                    <div class="price">99.00</div>
+                                </div>
+                                <div class="extend">
+                                    <div class="wrapper">
+                                        <div class="row">
+                                            <div class="qty">
+                                                <input class="input-number" type="text" value="1" />
+                                            </div>
+                                            <div class="deep">
+                                                <div class="group">
+                                                    <label class="label label-price">Price</label>
+                                                    <input class="input-number" type="text" value="99" />
+                                                </div>
+                                                <div class="group">
+                                                    <label>Discount</label>
+                                                    <input class="input-number" type="text" value="0" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="option-container">
+                                                <label class="label"></label>
+                                                <label class="label label-split">Split</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-on-cart no-select">
+                                <div class="origin" onclick="itemOnCartClickHandle(event);">
+                                    <div class="show">
+                                        <div class="decorate">
+                                            <span class="qty">1</span>
+                                        </div>
+                                        <div class="literal">
+                                            <header>Jean-K Blue</header>
+                                        </div>
+                                    </div>
+                                    <div class="price">159.00</div>
+                                </div>
+                                <div class="extend">
+                                    <div class="wrapper">
+                                        <div class="row">
+                                            <div class="qty">
+                                                <input class="input-number" type="text" value="1" />
+                                            </div>
+                                            <div class="deep">
+                                                <div class="group">
+                                                    <label class="label label-price">Price</label>
+                                                    <input class="input-number" type="text" value="159" />
                                                 </div>
                                                 <div class="group">
                                                     <label>Discount</label>
