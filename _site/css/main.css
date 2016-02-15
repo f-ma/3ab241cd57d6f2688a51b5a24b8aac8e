@@ -383,7 +383,7 @@ header#top {
         width: 50px;
         border: none;
         border-bottom: solid 1px #e6e6e6;
-        background-image: url("/asset/icon/search.png");
+        background-image: url("../asset/icon/search.png");
         background-repeat: no-repeat;
         -webkit-background-size: 18px;
         background-size: 18px;
@@ -558,7 +558,7 @@ header#top {
                   margin: 0 15px 0 12px;
                   height: 21px;
                   width: 15px;
-                  background-image: url("/asset/icon/new-customer.png");
+                  background-image: url("../asset/icon/new-customer.png");
                   background-repeat: no-repeat;
                   -webkit-background-size: 15px 21px;
                   background-size: 15px 21px;
@@ -608,7 +608,7 @@ header#top {
                 display: block;
                 height: 100%;
                 width: 15px;
-                background-image: url("/asset/icon/search.png");
+                background-image: url("../asset/icon/search.png");
                 background-repeat: no-repeat;
                 -webkit-background-size: 100%;
                 background-size: 100%;
