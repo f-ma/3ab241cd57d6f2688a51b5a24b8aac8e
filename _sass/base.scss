@@ -71,6 +71,9 @@ input {
   cursor: pointer;
   font-size: inherit;
   font-family: inherit;
+  &:focus {
+    outline: none;
+  }
   &.btn-round {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
