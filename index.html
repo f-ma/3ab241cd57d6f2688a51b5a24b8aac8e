@@ -16,7 +16,7 @@
         <div id="main">
             <section class="general"></section>
             <section class="actions-and-shows no-select">
-                <div id="show-to-sale" class="shows">
+                <div id="show-to-sale" class="shows summary-active">
                     <header>
                         <span>CART (<strong>5</strong>)</span>
                         <span>USD</span>
@@ -69,8 +69,49 @@
                             </div>
                         </div>
                         <ul id="items-on-cart" class="items">
-                            <li class="item-on-cart no-select" onclick="itemOnCartClickHandle(event);">
-                                <div class="origin">
+                            <li class="item-on-cart no-select">
+                                <div class="origin" onclick="itemOnCartClickHandle(event);">
+                                    <div class="show">
+                                        <div class="decorate">
+                                            <span class="qty">1</span>
+                                        </div>
+                                        <div class="literal">
+                                            <header>T-Shirt ABC</header>
+                                            <h5>White</h5>
+                                        </div>
+                                    </div>
+                                    <div class="price">59.00</div>
+                                </div>
+                                <div class="extend">
+                                    <div class="wrapper">
+                                        <div class="row">
+                                            <div class="qty">
+                                                <input class="input-qty input-number" type="text" value="1" />
+                                            </div>
+                                            <div class="deep">
+                                                <div class="group">
+                                                    <label class="label label-price">Price</label>
+                                                    <input class="input-number" type="text" value="59" />
+                                                </div>
+                                                <div class="group">
+                                                    <label>Discount</label>
+                                                    <input class="input-number" type="text" value="0" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="option-container">
+                                                <label class="label label-options">More Options</label>
+                                                <label class="label label-split">Split</label>
+                                            </div>
+                                        </div>
+                                        <div class="row row-extend"></div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="item-on-cart no-select">
+                                <div class="origin" onclick="itemOnCartClickHandle(event);">
                                     <div class="show">
                                         <div class="decorate">
                                             <span class="qty">1</span>
@@ -83,169 +124,28 @@
                                 </div>
                                 <div class="extend">
                                     <div class="wrapper">
-                                        <div class="group group-half">
-                                            <label>Quantity</label>
-                                            <input class="input-number" type="text" value="1" />
+                                        <div class="row">
+                                            <div class="qty">
+                                                <input class="input-number" type="text" value="1" />
+                                            </div>
+                                            <div class="deep">
+                                                <div class="group">
+                                                    <label class="label label-price">Price</label>
+                                                    <input class="input-number" type="text" value="59" />
+                                                </div>
+                                                <div class="group">
+                                                    <label>Discount</label>
+                                                    <input class="input-number" type="text" value="0" />
+                                                </div>
+                                            </div>
                                         </div>
-
-                                        <div class="group group-half">
-                                            <label>Price</label>
-                                            <input class="input-number" type="text" value="59" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="item-on-cart no-select" onclick="itemOnCartClickHandle(event);">
-                                <div class="origin">
-                                    <div class="show">
-                                        <div class="decorate">
-                                            <span class="qty">1</span>
-                                        </div>
-                                        <div class="literal">
-                                            <header>T-Shirt ABC White</header>
-                                        </div>
-                                    </div>
-                                    <div class="price">59.00</div>
-                                </div>
-                                <div class="extend">
-                                    sd
-                                </div>
-                            </li>
-
-                            <li class="item-on-cart no-select" onclick="itemOnCartClickHandle(event);">
-                                <div class="origin">
-                                    <div class="show">
-                                        <div class="decorate">
-                                            <span class="qty">1</span>
-                                        </div>
-                                        <div class="literal">
-                                            <header>T-Shirt ABC White</header>
+                                        <div class="row">
+                                            <div class="option-container">
+                                                <label class="label"></label>
+                                                <label class="label label-split">Split</label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="price">59.00</div>
-                                </div>
-                                <div class="extend">
-                                    sd
-                                </div>
-                            </li>
-
-                            <li class="item-on-cart no-select" onclick="itemOnCartClickHandle(event);">
-                                <div class="origin">
-                                    <div class="show">
-                                        <div class="decorate">
-                                            <span class="qty">1</span>
-                                        </div>
-                                        <div class="literal">
-                                            <header>T-Shirt ABC White</header>
-                                        </div>
-                                    </div>
-                                    <div class="price">59.00</div>
-                                </div>
-                                <div class="extend">
-                                    sd
-                                </div>
-                            </li>
-
-                            <li class="item-on-cart no-select" onclick="itemOnCartClickHandle(event);">
-                                <div class="origin">
-                                    <div class="show">
-                                        <div class="decorate">
-                                            <span class="qty">1</span>
-                                        </div>
-                                        <div class="literal">
-                                            <header>T-Shirt ABC White</header>
-                                        </div>
-                                    </div>
-                                    <div class="price">59.00</div>
-                                </div>
-                                <div class="extend">
-                                    sd
-                                </div>
-                            </li>
-
-                            <li class="item-on-cart no-select" onclick="itemOnCartClickHandle(event);">
-                                <div class="origin">
-                                    <div class="show">
-                                        <div class="decorate">
-                                            <span class="qty">1</span>
-                                        </div>
-                                        <div class="literal">
-                                            <header>T-Shirt ABC White</header>
-                                        </div>
-                                    </div>
-                                    <div class="price">59.00</div>
-                                </div>
-                                <div class="extend">
-                                    sd
-                                </div>
-                            </li>
-
-                            <li class="item-on-cart no-select" onclick="itemOnCartClickHandle(event);">
-                                <div class="origin">
-                                    <div class="show">
-                                        <div class="decorate">
-                                            <span class="qty">1</span>
-                                        </div>
-                                        <div class="literal">
-                                            <header>T-Shirt ABC White</header>
-                                        </div>
-                                    </div>
-                                    <div class="price">59.00</div>
-                                </div>
-                                <div class="extend">
-                                    sd
-                                </div>
-                            </li>
-
-                            <li class="item-on-cart no-select" onclick="itemOnCartClickHandle(event);">
-                                <div class="origin">
-                                    <div class="show">
-                                        <div class="decorate">
-                                            <span class="qty">1</span>
-                                        </div>
-                                        <div class="literal">
-                                            <header>T-Shirt ABC White</header>
-                                        </div>
-                                    </div>
-                                    <div class="price">59.00</div>
-                                </div>
-                                <div class="extend">
-                                    sd
-                                </div>
-                            </li>
-
-                            <li class="item-on-cart no-select" onclick="itemOnCartClickHandle(event);">
-                                <div class="origin">
-                                    <div class="show">
-                                        <div class="decorate">
-                                            <span class="qty">1</span>
-                                        </div>
-                                        <div class="literal">
-                                            <header>T-Shirt ABC White</header>
-                                        </div>
-                                    </div>
-                                    <div class="price">59.00</div>
-                                </div>
-                                <div class="extend">
-                                    sd
-                                </div>
-                            </li>
-
-                            <li class="item-on-cart no-select" onclick="itemOnCartClickHandle(event);">
-                                <div class="origin">
-                                    <div class="show">
-                                        <div class="decorate">
-                                            <span class="qty">1</span>
-                                        </div>
-                                        <div class="literal">
-                                            <header>T-Shirt ABC White</header>
-                                        </div>
-                                    </div>
-                                    <div class="price">59.00</div>
-                                </div>
-                                <div class="extend">
-
                                 </div>
                             </li>
                         </ul>

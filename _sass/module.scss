@@ -109,7 +109,7 @@ header#top {
   -webkit-transition: margin .3s ease-in-out;
   transition: margin .3s ease-in-out;
   > li {
-    transition: margin .2s ease-in-out .1s;
+    transition: margin .2s ease-in-out;
     margin-top: -1px;
     .origin {
       display: -webkit-flex;
@@ -126,6 +126,7 @@ header#top {
       border-top: solid 1px #e6e6e6;
       border-bottom: solid 1px #e6e6e6;
       cursor: pointer;
+      z-index: 1;
       .show {
         display: -webkit-flex;
         display: flex;
@@ -158,47 +159,125 @@ header#top {
     }
     .extend {
       height: 0;
-      opacity: 0;
+      opacity: .4;
       background-color: white;
       transition: height .2s ease-in-out, opacity .2s ease-in-out;
+      overflow: hidden;
+
       .wrapper {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-        .group {
+        .row {
           display: -webkit-flex;
           display: flex;
           -webkit-flex-flow: row nowrap;
           flex-flow: row nowrap;
-          height: 35px;
-          margin: -1px 0 0 0;
-          &.group-half {
-            width: 50%;
-            label {
-              border: solid 1px #e6e6e6;
-              border-left: none;
+          -webkit-align-items: center;
+          align-items: center;
+          .qty {
+            -webkit-flex-grow: 0;
+            flex-grow: 0;
+            -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+            width: 70px;
+            height: 70px;
+            input {
               height: 100%;
-              padding: 0 15px;
-              display: -webkit-flex;
-              display: flex;
-              -webkit-align-items: center;
-              align-items: center;
+              width: 100%;
+              text-align: center;
+              font-size: 21px;
+              font-weight: 600;
+              border: none;
               background-color: darkorange;
               color: white;
             }
-            input {
-              -webkit-flex-shrink: 1;
-              flex-shrink: 1;
-              -webkit-flex-grow: 1;
-              flex-grow: 1;
-              width: 50%;
-              border: solid 1px #e6e6e6;
-              border-left: none;
-              padding: 0 15px;
-              font-weight: 600;
-              &:focus {
-                outline: none;
+          }
+          .deep {
+            -webkit-flex-grow: 1;
+            flex-grow: 1;
+            .group {
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+              height: 35px;
+              > * {
+                height: 100%;
+              }
+              label {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+                -webkit-align-items: center;
+                align-items: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                border: solid 1px #e6e6e6;
+                border-top: none;
+                border-left: none;
+                min-width: 100px;
+                &.label-price {
+                  &:before {
+                    content: '';
+                    background-image: url('../asset/icon/money.png');
+                    width: 15px;
+                    height: 10px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    margin-right: 10px;
+                  }
+                }
+              }
+              input {
+                -webkit-flex-grow: 1;
+                flex-grow: 1;
+                -webkit-flex-shrink: 1;
+                flex-shrink: 1;
+                width: 100%;
+                border-right: none;
+                border-left: none;
+                border-top: none;
+                padding: 0 15px;
+                font-weight: 600;
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+          }
+          .option-container {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-flex-grow: 1;
+            flex-grow: 1;
+            padding: 15px;
+            label {
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+              -webkit-align-items: center;
+              align-items: center;
+              cursor: pointer;
+              &.label-split {
+                border-bottom: dashed 1px #999999;
+              }
+              &.label-options {
+                &:after {
+                  content: '';
+                  width: 10px;
+                  height: 10px;
+                  margin-left: 5px;
+                  background: url("../asset/icon/arrow-up.png") no-repeat;
+                  background-size: 100%;
+                  background-position: center center;
+                  transform-origin: center;
+                  transform: rotateZ(180deg);
+                }
               }
             }
           }
